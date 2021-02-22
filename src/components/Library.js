@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback } from "react";
 import axios from "../axios";
 import debounce from "lodash/debounce";
-import Videos from "../components/Videos";
+import Videos from "./Videos";
 import { makeStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
 import InputBase from "@material-ui/core/InputBase";
@@ -61,7 +61,7 @@ const App = () => {
     const type = "&type=video";
     const part = "&part=snippet";
     const channelId = "&channelId=UCu2YhywZvs7pXUEL3RCUEaA";
-    const maxResults = "&maxResults=5";
+    const maxResults = "&maxResults=15";
     const q = `&q=${filterValue}`;
     const pageToken = page ? `&pageToken=${page}` : "";
     const key = `&key=${process.env.REACT_APP_YOUTUBE_API_KEY}`;

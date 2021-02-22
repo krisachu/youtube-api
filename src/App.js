@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter, Redirect, Route, Switch } from "react-router-dom";
-import VideoPage from "./pages/VideoPage";
-import Navigation from "./pages/Navigation";
+import VideoPage from "./components/VideoPage";
+import Navigation from "./components/Navigation";
 
 const App = () => {
   return (
